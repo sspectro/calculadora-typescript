@@ -6,4 +6,13 @@
 [<img src="assets/images/Udemy_50x50.png">](https://www.udemy.com/course/curso-online-typescript/ "Meu perfil no github")
 
 ## Protótipo de Interface do Usuário
-[<img src="assets/images/prototipo-calculadora.png">](https://www.udemy.com/course/curso-online-typescript/ "Meu perfil no github")
+<img src="assets/images/prototipo-calculadora.png">
+
+
+## Meta
+><span style="color:Chocolate"><b>Cristiano Mendonça Gueivara</b> </span>
+[<img src="assets/images/linkedinIcon.png">](https://sspectro.github.io/ "Minha Página no Linkedin")
+[<img src="assets/images/githubIcon.png">](https://github.com/sspectro/sspectro.github.io/ "Meu perfil no github")
+
+><span style="color:Chocolate"><b>Licença:</b> </span> Distribuído sobre a licença `Software Livre`. Veja `LICENÇA` **[ISC](https://opensource.org/license/isc-license-txt/)**. para mais informações.
+
