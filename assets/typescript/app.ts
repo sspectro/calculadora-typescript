@@ -1,1 +1,3 @@
-console.log("Començando o projeto");
+import CalculadoraControle from "./calculadora/CalculadoraControle.js";
+
+new CalculadoraControle();
