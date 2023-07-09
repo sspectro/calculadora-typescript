@@ -1,0 +1,26 @@
+{
+  "name": "calculadora-typescript",
+  "version": "1.0.0",
+  "description": "Projeto da Calculadora desenvolvida em TypeScript no curso HCode",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style=compressed assets/scss:assets/css",
+    "tsc": "tsc --watch",
+    "dev": "concurrently \"npm run sass\" \"npm run tsc\""
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "css3",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Cristiano Mendonca",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "4.5.4",
+    "sass": "1.63.6",
+    "concurrently": "5.3.0"
+  }
+}

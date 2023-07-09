@@ -1,0 +1,1 @@
+console.log("Començando o projeto");
