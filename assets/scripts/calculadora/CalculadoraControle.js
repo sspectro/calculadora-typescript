@@ -1,6 +1,8 @@
+import DataHora from "./DataHora.js";
+DataHora;
 export default class CalculadoraControle {
     constructor() {
-        console.log("CalculadoraControle");
+        new DataHora();
     }
 }
 //# sourceMappingURL=CalculadoraControle.js.map
