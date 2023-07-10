@@ -1,7 +1,10 @@
 import DataHora from "./DataHora.js";
-DataHora;
+import Tela from "./Tela.js";
 export default class CalculadoraControle {
-    constructor() {
+    tela;
+    constructor(tela = new Tela()) {
+        this.tela = tela;
+        this.tela.conteudo = "1.5";
         new DataHora();
     }
 }
