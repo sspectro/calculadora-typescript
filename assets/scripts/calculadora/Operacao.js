@@ -6,19 +6,17 @@ export default class Operacao {
         this.onCalculado = opts.onCalculado;
     }
     adicionar(valor) {
-        this.operacao.push(valor);
-        console.log(this.operacao);
         if (this.operacao.length === 3) {
             this.calcular();
         }
-        console.log("-------------------");
-        console.log(this.operacao.length);
+        this.operacao.push(valor);
+        console.log(this.operacao);
         return this.length;
     }
     obterResultado() {
-        let resultado;
+        let resultado = "0";
         try {
-            resultado = eval(this.operacao.join("")).toString();
+            resultado = (eval(this.operacao.join(""))).toString();
         }
         catch (e) {
             resultado = "ERRO";
@@ -32,6 +30,13 @@ export default class Operacao {
         }
         this.operacao = [resultado];
         this.onCalculado(resultado);
+    }
+    get ultimaPosicao() {
+        return this.operacao.length ? this.operacao[this.operacao.length - 1] : "0";
+    }
+    set ultimaPosicao(valor) {
+        const ultimoIndex = this.operacao.length ? this.operacao.length - 1 : 0;
+        this.operacao[ultimoIndex] = valor;
     }
     get length() {
         return this.operacao.length;
