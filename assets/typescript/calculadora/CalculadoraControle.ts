@@ -5,7 +5,9 @@ import Operacao from "./Operacao.js";
 export default class CalculadoraControle {
     constructor(
         private tela = new Tela(),
-        private operacao = new Operacao(),
+        private operacao = new Operacao({
+            onCalculado: (resultado: string) => {this.tela.conteudo = resultado;
+        }}),
     ){
         new DataHora()
 
@@ -58,13 +60,17 @@ export default class CalculadoraControle {
                     break;
 
                     case "igual":
-
+                        this.calcular();
                     break;
 
                     
                 }
             });
         })
+    }
+
+    calcular(){
+        this.operacao.calcular();
     }
 
     adicionarOperacao(valor: string){
